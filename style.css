@@ -1,65 +1,105 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 header {
-    background: #333;
+    background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2em;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
-header p {
-    margin: 0;
+.icons {
+    margin-top: 1rem;
 }
 
-header a {
+.icons a {
+    display: inline-block;
+    margin: 0 10px;
     color: #fff;
-    text-decoration: none;
+    font-size: 2rem;
+    transition: color 0.3s;
 }
 
-header a:hover {
-    text-decoration: underline;
+.icons a:hover {
+    color: #0e76a8; /* LinkedIn blue */
+}
+
+.icon-github:hover {
+    color: #333; /* GitHub black */
 }
 
 section {
-    padding: 20px;
-    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
 }
 
 section h2 {
-    margin-top: 0;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+section ul {
+    list-style-type: none;
+}
+
+section ul li {
+    margin-bottom: 0.5rem;
 }
 
 footer {
-    background: #333;
-    color: #fff;
     text-align: center;
     padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+footer p {
+    font-size: 0.8rem;
 }
 
-li {
-    margin: 10px 0;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
 }
 
-a {
-    color: #333;
-    text-decoration: none;
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 2rem;
+    }
 }
 
-a:hover {
-    text-decoration: underline;
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .icons a {
+        font-size: 1.5rem;
+    }
 }
