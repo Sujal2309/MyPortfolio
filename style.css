@@ -1,85 +1,102 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    padding: 20px;
+    color: #333;
 }
 
 header {
-    background: #35424a;
-    color: #ffffff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #e8491d 3px solid;
+    background: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
 }
 
 header h1 {
-    text-align: center;
-    text-transform: uppercase;
     margin: 0;
-    font-size: 24px;
+    font-size: 2.5em;
 }
 
-.contact-info {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.contact-info a {
-    color: #ffffff;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-.social-profiles {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.social-profiles a {
-    color: #ffffff;
-    margin: 0 10px;
-    font-size: 24px;
+header p a {
+    color: white;
     text-decoration: none;
 }
 
-.social-profiles a:hover {
-    color: #e8491d;
+nav {
+    background: #333;
 }
 
-section {
-    background: #ffffff;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+nav .container {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #4CAF50;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
 h2 {
-    color: #35424a;
-    border-bottom: 2px solid #e8491d;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
 }
 
 ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
-li {
-    margin: 10px 0;
+ul li {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.fa-linkedin, .fa-github {
+    margin-right: 10px;
+}
+
+section p a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+section p a:hover {
+    text-decoration: underline;
 }
