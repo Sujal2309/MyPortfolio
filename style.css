@@ -8,14 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f0f0f0;
-}
-
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    background-color: #f4f4f4;
 }
 
 header {
@@ -30,6 +23,10 @@ header h1 {
     margin-bottom: 0.5rem;
 }
 
+header p {
+    font-size: 1.2rem;
+}
+
 .icons {
     margin-top: 1rem;
 }
@@ -42,7 +39,7 @@ header h1 {
     transition: color 0.3s;
 }
 
-.icons a:hover {
+.icon-linkedin:hover {
     color: #0e76a8; /* LinkedIn blue */
 }
 
@@ -51,30 +48,48 @@ header h1 {
 }
 
 section {
-    padding: 20px 0;
+    padding: 40px 0;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
 }
 
 section h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
+    text-align: center;
+    color: #333;
 }
 
-section ul {
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.education-item, .internship-item, .project-item {
+    margin-bottom: 20px;
+}
+
+.education-item h3, .internship-item h3, .project-item h3 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+ul {
     list-style-type: none;
 }
 
-section ul li {
+ul li {
     margin-bottom: 0.5rem;
+    font-size: 1rem;
 }
 
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     background-color: #333;
     color: #fff;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 
 footer p {
@@ -92,6 +107,10 @@ footer p {
     header h1 {
         font-size: 2rem;
     }
+
+    header p {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -101,5 +120,13 @@ footer p {
 
     .icons a {
         font-size: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .education-item h3, .internship-item h3, .project-item h3 {
+        font-size: 1.6rem;
     }
 }
