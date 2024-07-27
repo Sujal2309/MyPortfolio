@@ -1,132 +1,85 @@
-/* Reset and base styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-header p {
-    font-size: 1.2rem;
-}
-
-.icons {
-    margin-top: 1rem;
-}
-
-.icons a {
-    display: inline-block;
-    margin: 0 10px;
-    color: #fff;
-    font-size: 2rem;
-    transition: color 0.3s;
-}
-
-.icon-linkedin:hover {
-    color: #0e76a8; /* LinkedIn blue */
-}
-
-.icon-github:hover {
-    color: #333; /* GitHub black */
-}
-
-section {
-    padding: 40px 0;
-    background-color: #fff;
-    border-bottom: 2px solid #ddd;
-}
-
-section h2 {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-    text-align: center;
+    background-color: #f4f4f9;
     color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
+    overflow: hidden;
     padding: 20px;
 }
 
-.education-item, .internship-item, .project-item {
-    margin-bottom: 20px;
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
 }
 
-.education-item h3, .internship-item h3, .project-item h3 {
-    font-size: 1.8rem;
-    color: #333;
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 24px;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact-info a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+section {
+    background: #ffffff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #35424a;
+    border-bottom: 2px solid #e8491d;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 ul {
     list-style-type: none;
+    padding: 0;
 }
 
-ul li {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
+li {
+    margin: 10px 0;
 }
 
-footer {
+.icons {
     text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
+    margin-top: 10px;
 }
 
-footer p {
-    font-size: 0.8rem;
+.icons a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-}
-
-@media (max-width: 576px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    header p {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    .icons a {
-        font-size: 1.5rem;
-    }
-
-    section h2 {
-        font-size: 1.8rem;
-    }
-
-    .education-item h3, .internship-item h3, .project-item h3 {
-        font-size: 1.6rem;
-    }
+.icons a:hover {
+    color: #e8491d;
 }
