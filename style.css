@@ -44,6 +44,22 @@ header h1 {
     text-decoration: underline;
 }
 
+.social-profiles {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-profiles a {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-profiles a:hover {
+    color: #e8491d;
+}
+
 section {
     background: #ffffff;
     margin: 20px 0;
@@ -66,20 +82,4 @@ ul {
 
 li {
     margin: 10px 0;
-}
-
-.icons {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.icons a {
-    color: #333;
-    margin: 0 10px;
-    font-size: 24px;
-    text-decoration: none;
-}
-
-.icons a:hover {
-    color: #e8491d;
 }
